@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+	padding:0;
+	margin:0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body, html{
+	height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+	font-family: 'Poppins',sans-serif;
+}
+
+p{
+	font-family: 'Roboto',sans-serif;
+}
+
+.column.is-4:nth-child(-n+3){
+	margin-top: 2.5rem;
+}
+
+.column.is-4:nth-last-child(-n+3) {
+    margin-top: 2.5rem;
+}
+/* Root */
+
+/* Navbar */
+.navbar {
+	background-color: #c9f9de;
+}
+
+.navbar-burger:hover {
+    background-color: #c9f9de;
+}
+
+.navbar-burger{
+	margin-top: 9px;
+}
+
+@media screen and (max-width: 1087px){
+	.navbar-menu {
+	    background-color: #c9f9de;
+	    box-shadow: 0 8px 10px rgb(10 10 10 / 10%);
+	    padding: 0.5rem 0.1rem;
+	}
+}
+
+a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+    background-color: #00e87c;
+    color: #0e112f;
+    transition: .5s ease;
+}
+
+.navbar-item.veloris__logo{
+	font-family: 'Lobster',sans-serif;
+	font-size: 33px;
+	color: #0e112f;
+}
+
+.navbar-item, .navbar-link {
+    font-family: 'Poppins',sans-serif;
+	font-weight: 600;
+	color: #0e112f;
+    letter-spacing: 0;
+    font-size: 14px;
+}
+
+.button.veloris__nav__cta{
+	background: #00e87c;
+	color: #0e112f;
+	border: 1px solid #00e87c;
+	font-size: 14px;
+	padding:20px;
+}
+
+/* Hero */
+.veloris__hero{
+	background-color: #c9f9de;
+	text-align: center;
+}
+
+.title.veloris__hero__headline{
+	font-weight: 700;
+	font-size: 2.80rem;
+	color: #0e112f;
+}
+
+.subtitle.veloris__hero__tagline{
+	font-size: 1.15rem;
+	font-weight: 400;
+	color: rgba(54,54,54,0.5);
+}
+
+/* Subscribe Hero */
+.veloris__subscribe__hero{
+	background: #c9f9de;
+	text-align: center;
+}
+
+.title.veloris__subscribe__title{
+	font-weight: 700;
+	font-size: 2.50rem;
+	color: #0e112f;
+}
+
+.subtitle.veloris__subscribe__subtitle{
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: rgba(54,54,54,0.5);
+}
+
+.button.veloris__subscribe__btn{
+	font-family: 'Roboto',sans-serif;
+	font-size: 13px;
+	font-weight: 900;
+	background: #00e87c;
+	color: #0e112f;
+	border: 1px solid #00e87c;
+	padding: 17px;
+}
+
+.input.veloris__subscribe__input{
+	box-shadow: none;
+	border-color: transparent;
+	border-radius: 0;
+	font-family: 'Roboto',sans-serif;
+}
+
+/* Blog Section */
+.tabs{
+	overflow:hidden;
+}
+.tabs ul {
+	border-bottom-width: 2px;
+}
+
+.tabs a{
+	font-weight: 500;
+	color: rgba(54,54,54,0.7);
+	border:0;
+	padding:0;
+	padding-right: 2em;
+	margin-bottom: 5px;
+}
+
+.tabs li.is-active a {
+    border:0;
+    color: #0e112f;
+    font-weight: 700;
+}
+
+.card{
+	box-shadow: none;
+}
+
+.card-content{
+	padding:0;
+	margin-top: 1rem;
+}
+
+figure img{
+	border-radius: 7px;
+}
+
+.veloris__card__box{
+	background: rgba(201, 249, 222, 0.2);
+	padding: 0.5rem 0.5rem;
+	margin-bottom: 0.7rem;
+	border: 1px solid #f1f1f1;
+	display: flex;
+    justify-content: space-between;
+}
+
+.veloris__card__box .veloris__tag{
+	text-transform: uppercase;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 900;
+	font-size: 12px;
+	color: #0e112f;
+	letter-spacing: 2px;
+	margin-left: 0.3rem;
+}
+
+.veloris__card__box .veloris__tag__time{
+	font-family: 'Roboto',sans-serif;
+	font-size: 12px;
+	font-weight: 900;
+	color: rgba(54,54,54,0.7);
+	margin-right: 0.3rem;
+}
+
+.veloris__blog__title{
+	font-weight: 700;
+	font-size: 17px;
+	color: #0e112f;
+}
+
+.veloris__blog__desc{
+	font-weight: 500;
+	text-align: left;
+	color: rgba(54,54,54,0.7);
+	font-size: 15px;
+}
+
+.button.veloris__readmore{
+	font-family: 'Roboto',sans-serif;
+	font-size: 13px;
+	font-weight: 900;
+	background: #00e87c;
+	color: #0e112f;
+	border: 1px solid #00e87c;
+	padding: 17px;
+}
+
+.veloris__pagination{
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+.pagination-previous, .pagination-next, .pagination-link {
+	font-family: 'Poppins',sans-serif;
+    border:0;
+    color: #0e112f;
+    min-width: 2.25em;
+    font-weight: 900;
+}
+
+.pagination-link.is-current {
+    background-color: #0e112f;
+    border-color: #0e112f;
+    color: #fff;
+}
+
+.pagination-ellipsis {
+	font-family: 'Poppins',sans-serif;
+	font-weight: 900;
+    color: #0e112f;
+    pointer-events: none;
+}
+
+
+
+
+
+/* Footer */
+.veloris__footer{
+	background: #111d29;
+	padding:14rem 1.5rem 1.5rem;
+	position: relative;
+	z-index: 1;
+}
+
+.veloris__foot__text{
+	display: flex;
+	justify-content: space-between;
+}
+
+.veloris__foot__title{
+	color: #fff;
+	font-weight: 500;
+}
+
+.veloris__foot__link{
+	font-family: 'Poppins',sans-serif;
+	color: grey;
+	font-size: 15px;
+	margin-top: 1rem;
+	line-height: 2;
+}
+
+.veloris__foot__copy{
+	font-family: 'Roboto',sans-serif;
+	color: grey;
+	font-size: 14px;
+	margin-top: 1rem;
+	line-height: 2;
+}
+
+.veloris__social__link{
+	margin-top: 1rem;
+}
+
+.tag.veloris__social{
+	background: transparent;
+	padding-left: 0;
+	padding-right: 1rem;
+}
+
+.tag.veloris__social i {
+	color: #fff;
+	font-size: 18px;
+}
+
+.veloris__logo__foot{
+	font-family: 'Lobster',sans-serif;
+	font-size: 35px;
+	color: #fff;
+}
+
+.veloris__logo__foot:hover{
+	color: #fff;
+}
+
+
+
+
+.veloris__overlap__btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.au-apaan{
+	background:#c9f9de;
+	position: absolute;
+    z-index: 2;
+    margin-top: -4rem;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.au-appan-2{
+	margin:1rem;
+}
+
+.title.veloris__overlap__title{
+	font-weight: 700;
+	font-size: 1.75rem;
+	color: #0e112f;
+}
+
+.subtitle.veloris__overlap__subtitle{
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: rgba(54,54,54,0.5);
+}
